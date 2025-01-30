@@ -28,6 +28,10 @@ const productSchema = new mongoose.Schema({
     processor: String,
     battery: Number,
     price: Number,
+    color: String,
+    availability: String,
+    rating: Number,
+    reviews: Number,
     image_url: String,
 });
 
