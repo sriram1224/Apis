@@ -12,7 +12,7 @@ app.use(cors());
 
 // MongoDB Connection
 mongoose
-    .connect(process.env.MONGO_URI)
+    .connect("mongodb+srv://gnanasiddhikvarmasiruvuri:Siddhu@cluster0.mvj06.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
     .then(() => console.log("✅ MongoDB Connected"))
     .catch((err) => console.error("❌ MongoDB Connection Error:", err));
 
