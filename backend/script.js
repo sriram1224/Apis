@@ -52,7 +52,7 @@ app.get("/api/products", async (req, res) => {
 
 // Add a new product
 app.post("/api/products", async (req, res) => {
-    const { brand, model, storage, ram, screen_size, camera, processor, battery, price, image_url } = req.body;
+    const { brand, model, storage, ram, screen_size, camera, color, availability, rating, reviews, processor, battery, price, image_url } = req.body;
 
     const newProduct = new Product({
         brand,
@@ -63,6 +63,10 @@ app.post("/api/products", async (req, res) => {
         camera,
         processor,
         battery,
+        color,
+        availability,
+        rating,
+        reviews,
         price,
         image_url,
     });
